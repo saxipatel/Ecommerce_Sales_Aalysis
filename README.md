@@ -66,15 +66,31 @@ The report uses two related tables:
 - **DAX:** Measures and metric calculations, including the displayed Average Order Value measure
 - **Data modeling:** Relationship between order-level and line-item tables
 
-> **Metric note:** The dashboard displays an Average Order Value of **876**. Its exact DAX definition should be checked in the semantic model before adding a formula to this README; the displayed value alone does not establish whether the measure uses order count, quantity, or another denominator.
+### Average Order Value (AOV)
 
+Average Order Value measures the average revenue generated per order.
+
+**Formula:** Total Sales / Number of Unique Orders
+
+**DAX Measure:**
+
+```dax
+Average Order Value =
+DIVIDE(
+    SUM('Details'[Amount]),
+    DISTINCTCOUNT('Details'[Order ID]),
+    0
+)
+```
 ## Repository layout
 
+```text
 Ecommerce_Sales_Analysis/
 ├── README.md
 ├── Ecommerce Sales Dashboard.pbix
 └── images/
     └── dashboard.png
+```
 
 ## How to explore the report
 
