@@ -1,6 +1,6 @@
 # Ecommerce Sales Analysis | Power BI Dashboard
 
-An interactive Power BI report for exploring ecommerce sales performance across products, customers, locations, payment methods, and time. The dashboard brings key metrics together with filters for **quarter** and **state**, making it easier to identify sales patterns and profitability trends.
+An interactive Power BI report for exploring e-commerce sales performance across products, customers, locations, payment methods, and time. The dashboard brings key metrics together with filters for **quarter** and **state**, making it easier to identify sales patterns and profitability trends.
 
 ![Ecommerce Sales Dashboard](images/dashboard.png)
 
@@ -70,22 +70,11 @@ The report uses two related tables:
 
 ## Repository layout
 
-A suggested structure for the repository is:
-
-```text
 Ecommerce_Sales_Analysis/
 ├── README.md
-├── images/
-│   └── dashboard.png
-├── report/
-│   └── <Power BI report file>.pbix
-├── data/
-│   └── <source files or data documentation>
-└── docs/
-    └── <optional model and measure documentation>
-```
-
-*Update the file names and folders above to match the files actually committed to this repository. The dashboard image path in this README assumes `images/dashboard.png` exists.*
+├── Ecommerce Sales Dashboard.pbix
+└── images/
+    └── dashboard.png
 
 ## How to explore the report
 
